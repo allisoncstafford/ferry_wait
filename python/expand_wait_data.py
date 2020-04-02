@@ -34,6 +34,7 @@ def interpolate_wait(df, hours):
                                       time(int(hours[0]), 0))
     end = datetime.combine(df.index.max().date() + timedelta(days=1), 
                                     time(int(hours[1]), 0))
+    print(f'start: {start}n\end: {end}')
     
     # create list of dates
     sod = pd.date_range(start, end, freq='D', tz='US/Pacific')
