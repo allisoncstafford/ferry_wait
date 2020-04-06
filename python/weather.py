@@ -57,14 +57,14 @@ def main():
     #             dk_sky_url, excl, weather)
 
     # get_weather for next 998 dates
-    for date in dates[1:999]:
-        get_weather(date, lat_long[0], lat_long[1], key,
-                    dk_sky_url, excl, weather)
-
-    # get_weather for next 1000 dates
-    # for date in dates[999:1999]:
+    # for date in dates[1:999]:
     #     get_weather(date, lat_long[0], lat_long[1], key,
     #                 dk_sky_url, excl, weather)
+
+    # get_weather for next 1000 dates
+    for date in dates[999:1999]:
+        get_weather(date, lat_long[0], lat_long[1], key,
+                    dk_sky_url, excl, weather)
 
 
 def get_dates_list(initial_date: datetime, 
